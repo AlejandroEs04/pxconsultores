@@ -1,4 +1,19 @@
 <main class="admin">
+    <div class="mensaje">
+        <div class="mensaje_flotante">
+            <h3>¿Que proyecto quieres descargar?</h3>
+            <form class="formulario-flotante" method="POST" action="/admin/export">
+                <legend>Selecciona el proyecto</legend>
+                <select name="excel">
+                    <?php foreach($proyectos as $proyecto): ?>
+                        <option value="<?php echo $proyecto->id; ?>"><?php echo $proyecto->nom_proyecto; ?></option>
+                    <?php endforeach; ?>
+                </select>
+                
+                <button type="submit" name="export_data" value="Exportar a Excel">Exportar a Excel</button>
+            </form>
+        </div>
+    </div>
         <h1>Administration</h1>
         <?php 
             if($resultado):
@@ -32,9 +47,9 @@
                         <input id="searchbar" onkeyup="search_barra()" type="text" name="search" placeholder="Busqueda" class="barra-busqueda">
                     </div>
 
-                    <form class="contenedor-formulario export" method="POST" action="/admin/export">
-                        <button type="submit" name="export_data" value="Exportar a Excel">Exportar a Excel</button>
-                    </form>
+                    
+                    <button type="submit" name="export_data" value="Exportar a Excel" class="boton-export">Exportar a Excel</button>
+                    
 
                     <tbody class="tabla" id="list">
                         <?php 

@@ -26,6 +26,9 @@ function eventListener() {
 
     const mostrar2 = document.querySelector('.hide-tab2');
     mostrar2.addEventListener('click', mostrartabla2);
+
+    const mostrarPOP = document.querySelector('.boton-export');
+    mostrarPOP.addEventListener('click', mostrarMensaje);
 }
 function mostrartabla() {
     const tabla = document.querySelector('.hide');
@@ -38,6 +41,10 @@ function mostrartabla1() {
 function mostrartabla2() {
     const tabla2 = document.querySelector('.hide2');
     tabla2.classList.toggle('mostrar');
+}
+function mostrarMensaje() {
+    const mensajeMostrar = document.querySelector('.mensaje');
+    mensajeMostrar.classList.toggle('mensaje-show');
 }
 
 let slideIndex = 0;

@@ -33,6 +33,8 @@ class AdminController {
 
     public static function export(Router $router) {
 
+        $excel = $_POST['excel'];
+
         $productos = Producto::all();
         $proyectos = Proyecto::all();
         $clientes = Cliente::all();
@@ -66,6 +68,8 @@ class AdminController {
                 <tbody>
                     <?php 
                         foreach(array_reverse($codigos) as $codigo): 
+                            if($codigo->proyecto === $excel):
+
                     ?>
                         <tr>
                             <td><?php echo $codigo->id; ?></td>
@@ -94,7 +98,10 @@ class AdminController {
                                 </td>
                             <th><?php echo $codigo->fecha; ?></th>
                         </tr>
-                    <?php endforeach; ?>
+                    <?php 
+                            endif;
+                        endforeach; 
+                    ?>
                 </tbody>
             </table>
         <?php
