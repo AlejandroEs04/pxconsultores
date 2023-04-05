@@ -1,0 +1,40 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: $fuente_principal;
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    background-color: $color2;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3 {
+    font-family: $fuente_principal;
+    font-weight: 300;
+    text-align: center;
+}
+.alerta {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: $bold-regular;
+    border-radius: 2rem;
+    margin: 0.5rem 30%;
+    padding: 0.2rem;
+    color: $black;
+}
+.error {
+    background-color: red;
+    color: $white;
+    
+    
+}
+.exito {
+    background-color: $botonverde
+}

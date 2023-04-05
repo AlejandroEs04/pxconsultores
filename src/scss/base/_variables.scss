@@ -1,0 +1,58 @@
+// Tipografia *anadir la tipografia a usar*
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+// Fuentes
+$fuente_principal: 'Roboto', sans-serif;
+
+// Colores *anadir colores a usar*
+$black: #000000;
+$degradado: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(8,135,161,1) 63%);
+$white: #ffffff;
+$color1: #00102E;
+$colorFondo: #263044;
+$color2: #F7F2EF;
+$color3: #E0E0E0;
+$color4: #C1C9CC;
+$botonverde: #08a12a;
+$borde1: #2A1EE2;
+$borde2: #2CEEAD;
+$borde3: #C141F8;
+$borde4: #F4872D;
+$grisOscuro: #333333;
+
+
+// Tamano media query's
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+.boton {
+    background-color: $colorFondo;
+    border-radius: 4rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    transition: background-color linear .2s;
+}
+.boton:hover {
+    background-color: darken($colorFondo, 10);
+
+    color: $white;
+}
+.boton-enviar {
+    background-color: $botonverde;
+    border: none;
+
+    a {
+        color: $black;
+        font-weight: 800;
+    }
+}
+
+// Fuentes
+$delgada: 300;
+$regular : 400;
+$bold-regular : 550;
+$bold: 700;
+$black: 900;
+

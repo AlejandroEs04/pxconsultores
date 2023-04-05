@@ -1,0 +1,24 @@
+{
+    "name": "2004e/prueba",
+    "description": "Programa para pxconsultores",
+    "autoload": {
+        "psr-4": {
+            "2004e\\Prueba\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alejandro Estrada"
+        }
+    ],
+    "require": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "Model\\" : "./models",
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers"
+        }
+    }
+}

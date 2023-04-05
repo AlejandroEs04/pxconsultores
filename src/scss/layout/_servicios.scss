@@ -1,0 +1,90 @@
+.servicios {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width:$tablet) {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto
+    }
+    .three {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        .servicio {
+            img {
+                width: 9%;
+            }
+        }
+    }
+}
+@media (min-width:$desktop) {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 48rem;
+    }
+    .three {
+        grid-column-start: 3;
+        grid-column-end: 4;
+
+        .servicio {
+            img {
+                width: 20%;
+            }
+        }
+    }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $colorFondo;
+    border-radius: 3rem;
+    margin: 2rem 2rem 0 2rem;
+    padding: 2rem 3.5rem;
+    color: $white;
+    h2 {
+        font-weight: $regular;
+    }
+    p {
+        margin-top: 0;
+    }
+    img {
+        filter: invert(89%);
+        width: 20%;
+        transition: width ease-in 0.3s 0.05s;
+    }
+    a {
+        color: $black;
+    }
+    .boton-blanco {
+        background-color: $color4;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+    }
+    transition: margin ease-in-out 0.5s 0.1s, background-color linear 0.3s;
+}
+
+@media (min-width:$desktop) {
+    .contenedor-servicio:hover {
+        .servicio {
+            background-color: darken($colorFondo, $amount: 4);
+            margin: -5rem 2rem 5rem 2rem;
+            img {
+                width: 0%;
+            }
+        }   
+    }
+    .boton-blanco {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    }
+}

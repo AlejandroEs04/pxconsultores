@@ -1,0 +1,26 @@
+fieldset {
+    margin: 2rem 5rem;
+}
+.contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario {
+    width: 60%;
+
+    select, input {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+    .boton-enviar {
+        min-width: 15rem;
+        max-width: 20rem;
+    }
+}
+.boton-centrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

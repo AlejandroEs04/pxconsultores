@@ -1,0 +1,31 @@
+.inicio_principal {
+    background-image: url('../img/Fondo.jpg');
+}
+.header_principal {
+    background-color: $grisOscuro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 30rem;
+    color: $white;
+    &.inicio {
+        background-position: center center;
+        background-size: cover;
+    }
+    h1 {
+        margin-top: 0;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    @media (min-width:$tablet) {
+        h1 {
+            font-size: 5.2rem;
+            margin-bottom: 0;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+    }
+}

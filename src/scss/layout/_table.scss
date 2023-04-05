@@ -1,0 +1,97 @@
+table {
+    display: block;
+    width: 100%;
+}
+.contenedor-barra {
+    width: 100%;
+    padding-bottom: 1rem;
+
+    .barra-busqueda {
+        padding: 0.5rem 1rem;
+        width: 90%;
+    }
+}
+table {
+    width: 100%;
+}
+.tabla{
+    th{
+        background-color: $colorFondo;
+        padding: 0.2rem 1rem;
+    }
+    tr, th, td{
+        border: 1px solid $black;
+        font-weight: $delgada;
+    }
+    td {
+        padding: 0 0.5rem;
+    }
+}
+.productos {
+    th {
+        color: $white;
+    }
+}
+.clientes {
+    th {
+        color: $white;
+    }
+}
+.proyectos {
+    th {
+        color: $white;
+    }
+}
+.piezas {
+    th {
+        color: $white;
+    }
+}
+.contenido_admin {
+    text-align: center;
+
+    h2 {
+        font-weight: $regular;
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
+}
+a {
+    color: $white;
+}
+.admin {
+    img {
+        width: 2rem;
+    }
+}
+.hide, .hide1, .hide2 {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility .3s ease-in-out, opacity .5s linear, height .5s linear; 
+}
+
+/** Mostrar tablas **/
+.hide-tab {
+    img {
+        width: 2rem;
+    }
+}
+.mostrar {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+
+    table{
+        display: none;
+        width: 100%;
+    }
+
+    .hide-tab {
+        rotate: 180;
+    }
+}
+button {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
