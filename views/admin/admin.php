@@ -32,7 +32,7 @@
                         <input id="searchbar" onkeyup="search_barra()" type="text" name="search" placeholder="Busqueda" class="barra-busqueda">
                     </div>
 
-                    <form class="contenedor-formulario" method="POST" action="/admin/export">
+                    <form class="contenedor-formulario export" method="POST" action="/admin/export">
                         <button type="submit" name="export_data" value="Exportar a Excel">Exportar a Excel</button>
                     </form>
 
