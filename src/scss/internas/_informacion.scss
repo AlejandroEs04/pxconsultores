@@ -27,14 +27,33 @@
 .img-gdt {
     background-image: url("../img/gd&t.jpg");
 }
+.img-prototype {
+    background-image: url('../img/Prototype.jpg');
+}
 .contenedor-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width:$desktop) {
+    .contenedor-info {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
 }
 .contenedor-i {
     margin: 1.5rem;
     padding: 1rem 4rem;
 }
 .texto-info {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: $bold;
+    padding-left: 10rem;
+}
+.imagen-info {
+    display: flex;
+    justify-content: end;
+    img {
+        max-width: 70rem;
+        width: 100%;
+    }
 }

@@ -39,11 +39,16 @@
         </div>
         <div class="contenedor-info">
             <div class="contenedor-i texto-info">
-                <p>Vivamus iaculis magna at sapien eleifend aliquam. Sed vel faucibus massa, ut egestas ligula. In lorem orci, tincidunt ac sapien eget, condimentum euismod dolor. Aliquam nisl nisl, ornare in malesuada non, ultrices vel diam. In lorem sapien, scelerisque congue porta eleifend, porta eget arcu. In mollis sodales molestie. Morbi gravida tempor dui, ac cursus nunc semper at. Maecenas a maximus nulla. Sed eget odio sagittis, aliquam erat quis, finibus sem. Integer in neque nec neque aliquam pulvinar ut in lorem. Sed faucibus bibendum neque id pulvinar.</p>
+                <p>Network of Workshops</p>
+                <p>Cut and Weld</p>
+                <p>Machining</p>
+                <p>Resin 3D print</p>
+                <p>press brake machine</p>
+                <p>assembly proccesse</p>
             </div>
             
             <div class="contenedor-i imagen-info">
-                <h1>IMAGEN</h1>
+                <img src="build/img/Prototype-img.jpg">
             </div>
         </div>
     </div>
