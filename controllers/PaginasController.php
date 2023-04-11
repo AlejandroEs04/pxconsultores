@@ -24,4 +24,13 @@ class PaginasController {
             'contacto' => true
         ]);
     }
+
+    public static function informacion(Router $router) {
+
+        $point = $_GET['id'];
+
+        $router->render('paginas/informacion', [
+            'point' => $point
+        ]);
+    }
 }

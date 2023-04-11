@@ -34,6 +34,9 @@ $router->post('/codigo/crear', [CodigoController::class, 'crear']);
 $router->get('/codigo/actualizar', [CodigoController::class, 'actualizar']);
 $router->post('/codigo/actualizar', [CodigoController::class, 'actualizar']);
 
+/** INFORMACION **/
+$router->get('/informacion', [PaginasController::class, 'informacion']);
+
 /** SESION **/
 $router->get('/login', [LoginController::class, 'login']);
 $router->post('/login', [LoginController::class, 'login']);

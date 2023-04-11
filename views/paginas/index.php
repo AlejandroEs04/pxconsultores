@@ -5,34 +5,40 @@
 <div class="contenedor">
     <div class="manufactura"></div>
     <div class="servicios">
-        <div class="contenedor-servicio">
-            <div class="servicio">
+        <div class="contenedor-servicio" id="servicio1">
+            <a href="/informacion?id=1">
+                <div class="servicio">
                 <img src="build/img/eficiencia.svg">
-                <h2>Innovation</h2>
-                <p>At PX Consultores, we offer services of Engineering to analyze, design, simulate and prototype structural platforms for vehicles.</p>
-                <p>We have been focused on automotive structures for light and heavy duty applications, as well vocational applications from design until manufacturing.</p>
-                <a href="sabermas.php" class="boton-blanco">Saber mas</a>
-            </div>
+                    <h2>Innovation</h2>
+                    <p>At PX Consultores, we offer services of Engineering to analyze, design, simulate and prototype structural platforms for vehicles.</p>
+                    <p>We have been focused on automotive structures for light and heavy duty applications, as well vocational applications from design until manufacturing.</p>
+                    <a href="sabermas.php" class="boton-blanco">Saber mas</a>
+                </div>
+            </a>
         </div>
 
         <div class="contenedor-servicio">
-            <div class="servicio">
-                <img src="build/img/cordenadas.png">
-                <h2>GD&T</h2>
-                <p>We can assist you in making full detailed drawings of automotive platforms.</p>
-                <p>Our background of GD&T analysis of vehicle structures will provide value to your company or suppliers at the moment to manufacture or prototype your product.</p>
-                <a href="sabermas.php" class="boton-blanco">Saber mas</a>
-            </div>
+            <a href="/informacion?id=2">
+                <div class="servicio">
+                    <img src="build/img/cordenadas.png">
+                    <h2>GD&T</h2>
+                    <p>We can assist you in making full detailed drawings of automotive platforms.</p>
+                    <p>Our background of GD&T analysis of vehicle structures will provide value to your company or suppliers at the moment to manufacture or prototype your product.</p>
+                    <a href="sabermas.php" class="boton-blanco">Saber mas</a>
+                </div>
+            </a>
         </div>
 
         <div class="contenedor-servicio three">
-            <div class="servicio">
-                <img src="build/img/CHASSIS.png">
-                <h2>Prototype</h2>
-                <p>We count with and extensive network to make your prototype and everything needed to make it right at the first time</p>
-                <p>Our facility allow us to work in offer you a turn key solution from design, simulation and prototype.</p>
-                <a href="sabermas.php" class="boton-blanco">Saber mas</a>
-            </div>
+            <a href="/informacion?id=3">
+                <div class="servicio">
+                    <img src="build/img/CHASSIS.png">
+                    <h2>Prototype</h2>
+                    <p>We count with and extensive network to make your prototype and everything needed to make it right at the first time</p>
+                    <p>Our facility allow us to work in offer you a turn key solution from design, simulation and prototype.</p>
+                    <a href="sabermas.php" class="boton-blanco">Saber mas</a>
+                </div>
+            </a>
         </div>
     </div>
 </div>

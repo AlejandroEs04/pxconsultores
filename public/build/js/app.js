@@ -16,7 +16,6 @@ function search_barra() {
         }
     }
 }
-
 function eventListener() {
     const mostrar = document.querySelector('.hide-tab');
     mostrar.addEventListener('click', mostrartabla);
