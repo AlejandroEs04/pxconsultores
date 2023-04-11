@@ -37,7 +37,7 @@
 @media (min-width:$desktop) {
     .contenedor-info {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 .contenedor-i {
@@ -45,15 +45,27 @@
     padding: 1rem 4rem;
 }
 .texto-info {
-    font-size: 2rem;
-    font-weight: $bold;
+    font-size: 2.2rem;
+    font-weight: $regular;
     padding-left: 10rem;
 }
 .imagen-info {
     display: flex;
     justify-content: end;
     img {
-        max-width: 70rem;
+        max-width: 80rem;
+        width: 100%;
+    }
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.imagen-ino {
+    width: 100%;
+
+    img {
         width: 100%;
     }
 }

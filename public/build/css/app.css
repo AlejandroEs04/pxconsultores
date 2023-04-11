@@ -578,7 +578,7 @@ fieldset {
 @media (min-width: 1024px) {
   .contenedor-info {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 .contenedor-i {
@@ -587,8 +587,8 @@ fieldset {
 }
 
 .texto-info {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.2rem;
+  font-weight: 400;
   padding-left: 10rem;
 }
 
@@ -597,7 +597,20 @@ fieldset {
   justify-content: end;
 }
 .imagen-info img {
-  max-width: 70rem;
+  max-width: 80rem;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.imagen-ino {
+  width: 100%;
+}
+.imagen-ino img {
   width: 100%;
 }
 
