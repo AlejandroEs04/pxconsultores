@@ -435,15 +435,16 @@ h1, h2, h3 {
   text-align: center;
   font-size: 2rem;
   font-weight: 550;
+  width: 100%;
+  max-width: 40rem;
   border-radius: 2rem;
-  margin: 0.5rem 30%;
+  margin: 0.5rem 1rem 2rem 1rem;
   padding: 0.2rem;
-  color: 900;
+  color: #ffffff;
 }
 
 .error {
   background-color: red;
-  color: #ffffff;
 }
 
 .exito {

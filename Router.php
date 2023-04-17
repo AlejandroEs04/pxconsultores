@@ -25,7 +25,7 @@ class Router {
         $rutas_protegidas = [
             '/admin', 
             '/nuevo', 
-            '/proyectos/crear',
+            '/proyecto/crear',
             '/producto/crear',
             '/cliente/crear',
             '/codigo/crear',

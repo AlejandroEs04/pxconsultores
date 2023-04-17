@@ -6,7 +6,7 @@
     <div class="manufactura"></div>
     <div class="servicios">
         <div class="contenedor-servicio" id="servicio1">
-            <a href="/informacion?id=1">
+            <a href="/informacion#Innovation">
                 <div class="servicio">
                 <img src="build/img/eficiencia.svg">
                     <h2>Innovation</h2>
@@ -17,7 +17,7 @@
         </div>
 
         <div class="contenedor-servicio">
-            <a href="/informacion?id=2">
+            <a href="/informacion#GD&T">
                 <div class="servicio">
                     <img src="build/img/cordenadas.png">
                     <h2>GD&T</h2>
@@ -28,7 +28,7 @@
         </div>
 
         <div class="contenedor-servicio three">
-            <a href="/informacion?id=3">
+            <a href="/informacion#Prototype">
                 <div class="servicio">
                     <img src="build/img/CHASSIS.png">
                     <h2>Prototype</h2>

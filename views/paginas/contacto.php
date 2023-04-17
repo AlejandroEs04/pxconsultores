@@ -14,6 +14,9 @@
     <fieldset class="formulario">
         <legend>Contact Information</legend>
 
+        <label>Company</label>
+        <input type="text" name="contacto[company]" id="lastName" placeholder="Company">
+
         <label>Email</label>
         <input type="email" name="contacto[email]" id="email" placeholder="Email">
 

@@ -14,6 +14,12 @@ function debuguear($variable) {
     exit;
 }
 
+function s($html) : string {
+    $s = htmlspecialchars($html);
+
+    return $s;
+}
+
 function mostrarNotificacion($resultado) {
     $mensaje = '';
 

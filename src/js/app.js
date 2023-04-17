@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     eventListener();
+    cajaMensaje();
 });
 
 function search_barra() {
@@ -15,6 +16,18 @@ function search_barra() {
             y[i].style.display="";
         }
     }
+}
+function cajaMensaje() {
+    const cajaExistente = document.querySelector('.mensaje-show');
+
+    if(cajaExistente) {
+        const cajaRemover = document.querySelector('body');
+        cajaRemover.addEventListener('dblclick', eliminarTabla);
+    }
+}
+function eliminarTabla() {
+    const mensajeMostrar = document.querySelector('.mensaje');
+    mensajeMostrar.classList.remove('mensaje-show');
 }
 function eventListener() {
     const mostrar = document.querySelector('.hide-tab');
@@ -44,6 +57,8 @@ function mostrartabla2() {
 function mostrarMensaje() {
     const mensajeMostrar = document.querySelector('.mensaje');
     mensajeMostrar.classList.toggle('mensaje-show');
+    
+    cajaMensaje();
 }
 
 let slideIndex = 0;

@@ -28,6 +28,7 @@ class CodigoController {
 
             if(empty($errores)) {
                 // Guardar en la base de datos
+                debuguear($codigo);
                 $codigo->guardar();
             }
         }

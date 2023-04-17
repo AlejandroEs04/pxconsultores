@@ -26,8 +26,8 @@
         <div class="botones">
             <a href="/codigo/crear" class="boton boton-naranja">Nueva Pieza</a>
             <a href="/producto/crear" class="boton boton-azul">Nuevo Producto</a>
-            <a href="/admin/clientes/crear.php" class="boton boton-perryelornitorrinco">Nuevo Cliente</a>
-            <a href="/admin/proyectos/crear.php" class="boton boton-morado">Nuevo Proyecto</a>
+            <a href="/cliente/crear" class="boton boton-perryelornitorrinco">Nuevo Cliente</a>
+            <a href="/proyecto/crear" class="boton boton-morado">Nuevo Proyecto</a>
         </div>
         <div>
             <div class="contenido_admin">

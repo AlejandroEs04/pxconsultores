@@ -1,4 +1,4 @@
-<?php if($point === "1") {?>
+
     <div class="informacion" id="Innovation">
         <div class="imagen img-inovation">
             <h1>Innovation</h1>
@@ -13,9 +13,7 @@
             </div>
         </div>
     </div>
-<?php } ?>
 
-<?php if($point === "2") {?>
     <div class="informacion" id="GD&T">
         <div class="imagen img-gdt">
             <h1 class="blanco">GD&T</h1>
@@ -30,9 +28,7 @@
             </div>
         </div>
     </div>
-<?php } ?>
 
-<?php if($point === "3") {?>
     <div class="informacion" id="Prototype">
         <div class="imagen img-prototype">
             <h1>Prototype</h1>
@@ -52,4 +48,3 @@
             </div>
         </div>
     </div>
-<?php } ?>
