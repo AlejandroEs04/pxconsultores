@@ -54,3 +54,12 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+.seccion_fondo {
+  height: 10rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: $tablet) {
+  .seccion_fondo {
+    height: 31rem;
+  }
+}

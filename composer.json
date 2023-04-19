@@ -20,5 +20,8 @@
             "MVC\\" : "./",
             "Controllers\\" : "./controllers"
         }
+    },
+    "require": {
+        "scssphp/scssphp": "^1.11.0"
     }
 }

@@ -14,6 +14,7 @@ class Codigo extends ActiveRecord {
     public $proyecto;
     public $nombre;
     public $fecha;
+    public $calibre;
 
     public function __construct($args = []) {
         $this->id = $args['id'] ?? null;
@@ -22,6 +23,7 @@ class Codigo extends ActiveRecord {
         $this->proyecto = $args['proyecto'] ?? '';
         $this->nombre = $args['nombre'] ?? '';
         $this->fecha = date('Y/m/d');
+        $this->calibre = $args['calibre'] ?? '';
     }
 
     public function validar() {

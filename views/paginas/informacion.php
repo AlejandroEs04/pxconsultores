@@ -18,13 +18,15 @@
         <div class="imagen img-gdt">
             <h1 class="blanco">GD&T</h1>
         </div>
-        <div class="contenedor-info">
+        <div class="contenedor-info cuadro2">
             <div class="contenedor-i imagen-info">
-                <h1>IMAGEN</h1>
+                <img src="/../build/img/GD&T-IA.jpg">
             </div>
             
             <div class="contenedor-i texto-info">
-                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam porttitor porttitor nisl et placerat. Nulla scelerisque massa ante, at viverra justo posuere non. Sed eleifend augue ut vestibulum iaculis. Sed mattis pretium arcu, et vehicula lorem molestie non. Cras sagittis vehicula lorem, vehicula dapibus elit lobortis varius. Fusce suscipit nisi a tellus varius malesuada. Cras maximus vel nibh nec dignissim. Proin scelerisque bibendum odio faucibus auctor. In varius, mi quis suscipit condimentum, enim augue egestas nunc, ac scelerisque dolor turpis eleifend diam. Phasellus ac odio venenatis, aliquet ipsum eget, efficitur arcu. Integer nec nisi a turpis porta dignissim. Cras ornare lobortis magna, gravida blandit dui vestibulum maximus.</p>
+                 <p>Complexity in the new designs, advanced engineering, manufacturing of components in different suppliers, the main reason for establishing the use of geometries, standards and dimensions known by their acronym GD&T and the ISO1101 / ASME Y14.5 standards.</p>
+                 <p>ISO GPS (geometric product specification), established by the International Organization for Standardization</p>
+                 <p>ASME Y14.5, established by the American Society of Mechanical Engineers</p>
             </div>
         </div>
     </div>
@@ -33,14 +35,16 @@
         <div class="imagen img-prototype">
             <h1>Prototype</h1>
         </div>
-        <div class="contenedor-info">
+        <div class="contenedor-info cuadro1">
             <div class="contenedor-i texto-info">
-                <p>We have a network of workshops for the manufacture of components and the area for the assembly of your prototypes</p>
-                <p>Cut and Weld</p>
-                <p>Machining</p>
-                <p>Resin 3D print</p>
-                <p>press brake machine</p>
-                <p>assembly proccesse</p>
+                <p class="texto-primario">We have a network of workshops for the manufacture of components and the area for the assembly of your prototypes</p>
+                <div class="tarjetas">
+                    <p>Cut and Weld</p>
+                    <p>Machining</p>
+                    <p>Resin 3D print</p>
+                    <p>press brake machine</p>
+                    <p>assembly proccesse</p>
+                </div>
             </div>
             
             <div class="contenedor-i imagen-info">

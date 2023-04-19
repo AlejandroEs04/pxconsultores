@@ -33,6 +33,9 @@
 
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="codigo[nombre]" placeholder="Nombre de la pieza" value="<?php echo s($codigo->nombre); ?>"> 
+            
+            <label for="calibre">Calibre:</label>
+            <input type="text" id="calibre" name="codigo[calibre]" placeholder="Calibre" value="<?php echo s($codigo->calibre); ?>"> 
         </fieldset>
 
         <div class="boton-centrado">

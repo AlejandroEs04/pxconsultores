@@ -28,7 +28,6 @@ class CodigoController {
 
             if(empty($errores)) {
                 // Guardar en la base de datos
-                debuguear($codigo);
                 $codigo->guardar();
             }
         }
@@ -40,6 +39,29 @@ class CodigoController {
             'clientes' => $clientes, 
             'productos' => $productos,
             'proyectos' => $proyectos, 
+            'codigo' => $codigo
+        ]);
+    }
+
+    public static function actualizar(Router $router) {
+        $id = validarORedireccionar('/codigo');
+
+            // Buscar codigo por su id 
+            $codigo = Codigo::find($id);
+
+            if($_SERVER['REQUEST_METHOD'] === 'POST') {
+                $args = $_POST['codigo'];
+    
+                $errores = $codigo->validar();
+    
+    
+                if(empty($errores)) {
+                    // Guardar en la base de datos
+                    $args->guardar();
+                }
+            }
+
+        $router->render('admin/actualizar', [
             'codigo' => $codigo
         ]);
     }
