@@ -34,22 +34,17 @@
 
                     <?php if(!$adminsi): ?>
                         <a href="/nosotros" class="<?php if($nosotros){ echo "active";} ?>">Who are we?</a>
-                    <?php endif; ?>
-
-                    <?php if(!$adminsi): ?>
                         <a href="/contacto" class="<?php if($contacto){ echo "active";} ?>">Contact us</a>
+                        <a href="/#blog">Blog</a>
                     <?php endif; ?>
 
                     <?php if($adminsi): ?>
                         <a href="/admin">Administration</a>
+                        <a href="/nuevo">New Account</a>
                     <?php endif; ?>
                     
                     <?php if($auth): ?>
                         <a href="/logout">Log Out</a>
-                    <?php endif; ?>
-
-                    <?php if($adminsi): ?>
-                        <a href="/nuevo">New Account</a>
                     <?php endif; ?>
                 </nav>
             </div>
@@ -60,7 +55,6 @@
         <div class="contenedor-social-media" id="socia-media-padre">
             <div class="social-media">
                 <a href="https://mx.linkedin.com/company/px-consultores" class="media"><img src="/build/img/linkedin.svg"></a>
-                <a href="#" class="media"><img src="/build/img/whatsapp.svg"></a>
             </div>
         </div>
     <?php endif; ?>

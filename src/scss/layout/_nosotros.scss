@@ -1,0 +1,87 @@
+.nosotros {
+    display: flex;
+    flex-direction: column;
+
+
+    margin: 1rem 8%;
+}
+.contenedor-nosotros-i {
+    display: flex;
+    flex-direction: column;
+}
+.texto-nosotros {
+    margin: 4rem 0 4rem 0;
+    p {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 2.3rem;
+        font-weight: $bold
+    }
+    img {
+        max-width: 35rem;
+    }
+}
+@media (min-width: $tablet) {
+    .contenedor-nosotros-i {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor-texto {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+.contenedor-nosotros {
+    padding: 1rem 3rem;
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+.img-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grafica-contenedor {
+    p {
+        font-size: 1.9rem;
+    }
+}
+.contenido-nosotros {
+    margin: 0 2rem;
+}
+.barra-nosotros {
+    width: 100%;
+    border: 1px solid $black;
+    height: 1.5rem;
+}
+.barra-roja {
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+    background-color: red;
+    color: $white;
+    border-radius: 0.5rem;
+    width: 95%;
+
+    transition: width linear 0.5s 0.5s;
+}
+.parrafo-nosotros {
+    text-align: justify;
+}
+.aptitudes {
+    text-align: center;
+}
+.aptitud {
+    margin: 1rem 2rem;
+    padding: 2rem 2rem;
+    color: $white;
+    background-color: $grisOscuro;
+    border: 1px solid $black;
+    border-radius: 1rem;
+}

@@ -20,6 +20,18 @@ function s($html) : string {
     return $s;
 }
 
+function validarORedireccionar(string $url) {
+    // Validar que la URL sea un id valido
+    $id = $_GET['id'];
+    $id = filter_var($id, FILTER_VALIDATE_INT);
+
+    if (!$id) {
+        header("Location: ${url}");
+    }
+
+    return $id;
+} 
+
 function mostrarNotificacion($resultado) {
     $mensaje = '';
 

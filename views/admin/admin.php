@@ -1,6 +1,9 @@
 <main class="admin">
     <div class="mensaje">
         <div class="mensaje_flotante">
+            <div class="cerrar">
+                <div class="cerrar-boton">x</div>
+            </div>
             <h3>¿Que proyecto quieres descargar?</h3>
             <form class="formulario-flotante" method="POST" action="/admin/export">
                 <legend>Selecciona el proyecto</legend>
@@ -40,6 +43,7 @@
                             <th>Nombre</th>
                             <th>Producto</th>
                             <th>Proyecto</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
 
@@ -78,6 +82,14 @@
                                         $proyectoid = $codigo->proyecto-1;
                                         echo($proyectos[$proyectoid]->nom_proyecto);
                                     ?>
+                                </td>
+
+                                <td class="acciones">
+                                    <div class="boton">
+                                        <a href="/codigo/actualizar?id=<?php echo $codigo->id; ?>">
+                                            <p>Ver</p>
+                                        </a>
+                                    </div>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

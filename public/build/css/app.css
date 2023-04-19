@@ -418,7 +418,7 @@ body {
   margin: 0;
   font-size: 1.6rem;
   line-height: 1.8;
-  background-color: #F7F2EF;
+  background-color: #FFFFFF;
 }
 
 a {
@@ -504,7 +504,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 30%;
   background-color: #ffffff;
   border: 1px solid black;
   border-radius: 4rem;
@@ -535,6 +535,20 @@ fieldset {
   width: 100%;
 }
 
+.cerrar {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  cursor: pointer;
+}
+.cerrar .cerrar-boton {
+  width: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.2rem 0.2rem 0 0s;
+}
+
 .informacion {
   display: flex;
   flex-direction: column;
@@ -544,7 +558,7 @@ fieldset {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 30rem;
+  height: 23rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -577,9 +591,13 @@ fieldset {
 }
 
 @media (min-width: 1024px) {
-  .contenedor-info {
+  .cuadro1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+  }
+  .cuadro2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 }
 .contenedor-i {
@@ -595,11 +613,12 @@ fieldset {
 
 .imagen-info {
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  align-items: end;
 }
 .imagen-info img {
-  max-width: 80rem;
   width: 100%;
+  max-width: 45rem;
 }
 
 .flex {
@@ -613,6 +632,18 @@ fieldset {
 }
 .imagen-ino img {
   width: 100%;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+.tarjetas p {
+  background-color: #515C76;
+  margin: 1.2rem 1.5rem;
+  border-radius: 0.8rem;
+  color: #ffffff;
 }
 
 /** UI **/
@@ -711,7 +742,7 @@ fieldset {
 }
 
 .header_principal {
-  background-color: #333333;
+  background-color: #515C76;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -740,9 +771,21 @@ fieldset {
 }
 
 .contenedor {
+  margin: 0 3rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
+}
+.contenedor h1, .contenedor h2 {
+  margin: 0;
+}
+.contenedor h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.contenedor h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
@@ -757,7 +800,7 @@ fieldset {
   text-align: center;
   border: 1px solid 900;
   border-radius: 3rem;
-  background-color: #E0E0E0;
+  background-color: #FFFFFF;
 }
 .contenido h2 {
   font-size: 3rem;
@@ -783,99 +826,6 @@ fieldset {
     margin: 0 2rem;
   }
 }
-table {
-  display: block;
-  width: 100%;
-}
-
-.contenedor-barra {
-  width: 100%;
-  padding-bottom: 1rem;
-}
-.contenedor-barra .barra-busqueda {
-  padding: 0.5rem 1rem;
-  width: 90%;
-}
-
-table {
-  width: 100%;
-}
-
-.tabla th {
-  background-color: #263044;
-  padding: 0.2rem 1rem;
-}
-.tabla tr, .tabla th, .tabla td {
-  border: 1px solid 900;
-  font-weight: 300;
-}
-.tabla td {
-  padding: 0 0.5rem;
-}
-
-.productos th {
-  color: #ffffff;
-}
-
-.clientes th {
-  color: #ffffff;
-}
-
-.proyectos th {
-  color: #ffffff;
-}
-
-.piezas th {
-  color: #ffffff;
-}
-
-.contenido_admin {
-  text-align: center;
-}
-.contenido_admin h2 {
-  font-weight: 400;
-  margin-top: 4rem;
-  margin-bottom: 0;
-}
-
-a {
-  color: #ffffff;
-}
-
-.admin img {
-  width: 2rem;
-}
-
-.hide, .hide1, .hide2 {
-  visibility: hidden;
-  opacity: 0;
-  height: 0;
-  transition: visibility 0.3s ease-in-out, opacity 0.5s linear, height 0.5s linear;
-}
-
-/** Mostrar tablas **/
-.hide-tab img {
-  width: 2rem;
-}
-
-.mostrar {
-  visibility: visible;
-  opacity: 1;
-  height: auto;
-}
-.mostrar table {
-  display: none;
-  width: 100%;
-}
-.mostrar .hide-tab {
-  rotate: 180;
-}
-
-button {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 footer {
   background-color: #263044;
   display: flex;
@@ -1091,6 +1041,16 @@ footer {
     opacity: 1;
   }
 }
+.seccion_fondo {
+  height: 10rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .seccion_fondo {
+    height: 31rem;
+  }
+}
 .contenedor-social-media {
   display: flex;
   flex-direction: column;
@@ -1145,4 +1105,199 @@ footer {
 }
 .unit img {
   width: 100%;
+}
+
+table {
+  display: block;
+  width: 100%;
+}
+
+.contenedor-barra {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.contenedor-barra .barra-busqueda {
+  padding: 0.5rem 1rem;
+  width: 90%;
+}
+
+table {
+  width: 100%;
+}
+
+.tabla th {
+  background-color: #263044;
+  padding: 0.2rem 1rem;
+}
+.tabla tr, .tabla th, .tabla td {
+  border: 1px solid 900;
+  font-weight: 300;
+}
+.tabla td {
+  padding: 0 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.productos th {
+  color: #ffffff;
+}
+
+.clientes th {
+  color: #ffffff;
+}
+
+.proyectos th {
+  color: #ffffff;
+}
+
+.piezas th {
+  color: #ffffff;
+}
+
+.contenido_admin {
+  text-align: center;
+}
+.contenido_admin h2 {
+  font-weight: 400;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+a {
+  color: #ffffff;
+}
+
+.admin img {
+  width: 2rem;
+}
+
+.hide, .hide1, .hide2 {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: visibility 0.3s ease-in-out, opacity 0.5s linear, height 0.5s linear;
+}
+
+/** Mostrar tablas **/
+.hide-tab img {
+  width: 2rem;
+}
+
+.mostrar {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+.mostrar table {
+  display: none;
+  width: 100%;
+}
+.mostrar .hide-tab {
+  rotate: 180;
+}
+
+button {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.acciones .boton {
+  background-color: #263044;
+  margin: 0.05rem 1rem;
+  border-radius: 0.5rem;
+}
+.acciones .boton p {
+  margin: 0;
+}
+
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 8%;
+}
+
+.contenedor-nosotros-i {
+  display: flex;
+  flex-direction: column;
+}
+
+.texto-nosotros {
+  margin: 4rem 0 4rem 0;
+}
+.texto-nosotros p {
+  font-size: 1.8rem;
+}
+.texto-nosotros h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.texto-nosotros img {
+  max-width: 35rem;
+}
+
+@media (min-width: 768px) {
+  .contenedor-nosotros-i {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contenedor-texto {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+.contenedor-nosotros {
+  padding: 1rem 3rem;
+}
+.contenedor-nosotros p {
+  margin-bottom: 0.5rem;
+}
+.contenedor-nosotros img {
+  max-width: 100%;
+}
+
+.img-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grafica-contenedor p {
+  font-size: 1.9rem;
+}
+
+.contenido-nosotros {
+  margin: 0 2rem;
+}
+
+.barra-nosotros {
+  width: 100%;
+  border: 1px solid 900;
+  height: 1.5rem;
+}
+
+.barra-roja {
+  display: flex;
+  justify-content: end;
+  padding-right: 1rem;
+  background-color: red;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  width: 95%;
+  transition: width linear 0.5s 0.5s;
+}
+
+.parrafo-nosotros {
+  text-align: justify;
+}
+
+.aptitudes {
+  text-align: center;
+}
+
+.aptitud {
+  margin: 1rem 2rem;
+  padding: 2rem 2rem;
+  color: #ffffff;
+  background-color: #515C76;
+  border: 1px solid 900;
+  border-radius: 1rem;
 }

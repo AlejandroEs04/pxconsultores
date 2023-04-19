@@ -21,8 +21,8 @@ function cajaMensaje() {
     const cajaExistente = document.querySelector('.mensaje-show');
 
     if(cajaExistente) {
-        const cajaRemover = document.querySelector('body');
-        cajaRemover.addEventListener('dblclick', eliminarTabla);
+        const cajaRemover = document.querySelector('.cerrar-boton');
+        cajaRemover.addEventListener('click', eliminarTabla);
     }
 }
 function eliminarTabla() {

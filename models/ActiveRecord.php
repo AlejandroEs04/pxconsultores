@@ -63,8 +63,13 @@ class ActiveRecord {
 
     // Guardar registros en la base de datos
     public function guardar() {
-        // Crear un nuevo codigo
-        $this->crear();
+        if(!is_null($this->id)) {
+            // actualizar
+            $this->actualizar();
+        } else {
+            // Creando un nuevo registro
+            $this->crear();
+        }
     }
 
     // Crear registros
@@ -87,6 +92,30 @@ class ActiveRecord {
             // Redireccionar al usuario.
             header('Location: /admin?resultado=1');
         }
+    }
+
+    public function actualizar() {
+        // Sanitizar los datos
+        $atributos = $this->sanitizarAtributos();
+
+        $valores = [];
+        foreach($atributos as $key => $value) {
+            $valores[] = "{$key}='{$value}'";
+        }
+
+        $query = "UPDATE " . static::$tabla . " SET ";
+        $query .= join(', ', $valores);
+        $query .= " WHERE id = '" . self::$db->escape_string($this->id) . "' ";
+        $query .= " LIMIT 1";
+
+        $resultado = self::$db->query($query);
+
+        if($resultado) {
+            // Redireccionar al usuario.
+            header('Location: /admin?resultado=2');
+        }
+        
+        
     }
 
     // Crear objetos
