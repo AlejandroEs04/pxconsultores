@@ -40,31 +40,6 @@
     </div>
 </div>
 
-<div class="seccion_fondo">
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-    <img src="build/img/slider-image1.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides fade">
-    <img src="build/img/Fondo2.png" style="width:100%">
-    </div>
-
-    <div class="mySlides fade">
-    <img src="build/img/Fondo2.png" style="width:100%">
-    </div>
-
-    <!-- Next and previous buttons -->
-    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
-    <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-    </div>
-</div>
-
-<div class="contenedor">
-    <div class="blog" id="blog">
-        <h1>Blog</h1>
-    </div>
+<div id="contacto">
+    <?php incluirTemplate('Contacto') ?>
 </div>

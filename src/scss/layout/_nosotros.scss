@@ -5,6 +5,9 @@
 
     margin: 1rem 8%;
 }
+span {
+    color: lighten($color: $color1, $amount: 20);
+}
 .contenedor-nosotros-i {
     display: flex;
     flex-direction: column;
@@ -22,7 +25,7 @@
         max-width: 35rem;
     }
 }
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
     .contenedor-nosotros-i {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

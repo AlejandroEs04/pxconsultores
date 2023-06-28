@@ -16,7 +16,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../build/css/app.css">
-    <title>www.pxconsultores.com</title>
+    <link rel="icon" href="../build/img/PXicon.ico">
+    <title>PX Consultores</title>
 </head>
 
 <body>
@@ -33,9 +34,8 @@
                     <a href="/" class="<?php if($inicio){ echo "active";} ?>">Main</a>
 
                     <?php if(!$adminsi): ?>
-                        <a href="/nosotros" class="<?php if($nosotros){ echo "active";} ?>">Who are we?</a>
+                        <a href="/nosotros" class="<?php if($nosotros){ echo "active";} ?>">About Us</a>
                         <a href="/contacto" class="<?php if($contacto){ echo "active";} ?>">Contact us</a>
-                        <a href="/#blog">Blog</a>
                     <?php endif; ?>
 
                     <?php if($adminsi): ?>
@@ -59,23 +59,27 @@
         </div>
     <?php endif; ?>
 
-    <?php echo $contenido; ?>
+    <main>
+        <?php echo $contenido; ?>
+    </main>
+
+    
 
     <footer class="footer">
         <div class="seccion">
             <div class="barra_footer">
-                <img src="/build/img/logo.png">
+                <img src="/build/img/LogoPXnew.png"> 
             </div>
             <div class="contenedor_nav">
                     <nav class="navegacion">
-                        <a href="/" class="<?php if($inicio){ echo "active";} ?>">Main</a>
+                        <a href="/">Main</a>
 
                         <?php if(!$adminsi): ?>
-                            <a href="/nosotros" class="<?php if($nosotros){ echo "active";} ?>">Who are we?</a>
+                            <a href="/nosotros">About Us</a>
                         <?php endif; ?>
 
                         <?php if(!$adminsi): ?>
-                            <a href="/contacto" class="<?php if($contacto){ echo "active";} ?>">Contact us</a>
+                            <a href="/contacto">Contact us</a>
                         <?php endif; ?>
 
                         <?php if($adminsi): ?>
@@ -92,7 +96,14 @@
                     </nav>
                 </div>
         </div>
-        <p class="copyright">&copy;<?php echo date('Y'); ?> PX Consultores S.A. de C.V.</p>
+        <div class="infoFooter">
+            <div class="ddCode">
+                <p>Create by: D<span>D</span>-Code</p>
+                <a href="https://www.dd-code.com/">Visitanos en DD-Code</a>
+            </div>
+            <p class="copyright">&copy;<?php echo date('Y'); ?> PX Consultores S.A. de C.V.</p>
+        </div>
+        
     </footer>
 
     <script src="/build/js/app.js"></script>

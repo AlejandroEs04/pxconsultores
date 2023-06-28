@@ -17,7 +17,6 @@ class Router {
     public function comprobarRutas() {
         session_start();
 
-
         // Comprobar si el usuario iniciar sesion para entrar a admin
         $auth = $_SESSION['login'] ?? null;
 
@@ -52,7 +51,7 @@ class Router {
         if($fn) {
             call_user_func($fn, $this);
         } else {
-            echo "Pagina no encontrada";
+            incluirTemplate('Error404');
         }
     }
 

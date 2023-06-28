@@ -1,26 +1,12 @@
-<h1>Contact Us</h1>
+<?php foreach($errores as $error): ?>
+        <div class="alerta error">
+            <?php echo $error; ?>
+        </div>
+<?php endforeach; ?>
 
-<form class="contenedor-formulario" method="POST" action="/contacto">
-    <fieldset class="formulario">
-        <legend>Personal Information</legend>
 
-        <label>Name</label>
-        <input type="text" name="contacto[nombre]" id="name" placeholder="Your Name">
+<div class="contenedorContactoPage" id="contacto"</div>
+    <?php incluirTemplate('Contacto') ?>
+</div>
+    
 
-        <label>Last Name</label>
-        <input type="text" name="contacto[lastName]" id="lastName" placeholder="Your Last Name">
-    </fieldset>
-
-    <fieldset class="formulario">
-        <legend>Contact Information</legend>
-
-        <label>Company</label>
-        <input type="text" name="contacto[company]" id="lastName" placeholder="Company">
-
-        <label>Email</label>
-        <input type="email" name="contacto[email]" id="email" placeholder="Email">
-
-        <label>Phone</label>
-        <input type="tel" name="contacto[lastName]" id="lastName" placeholder="Your Last Name">
-    </fieldset>
-</form>

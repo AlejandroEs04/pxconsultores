@@ -1,75 +1,85 @@
-fieldset {
-    margin: 2rem 5rem;
+.contenedorContactoPage {
+    padding: 5rem 0;
 }
-.contenedor-formulario {
+
+/** FORMULARIO INICIO PRUEBA **/
+.formularioContactoInicio {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.formulario {
-    width: 60%;
+    text-align: center;
 
-    select, input {
-        width: 100%;
-        font-size: 1.7rem;
-    }
+    margin: 2rem 10%;
 
-    .boton-enviar {
-        min-width: 15rem;
-        max-width: 20rem;
-    }
-}
-.boton-centrado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.mensaje {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    background-color: $white;
-    border: 1px solid black;
-    border-radius: 4rem;
-    padding: 0.5rem 1rem 1.5rem 1rem;
-    margin-top: 18%;
-    position: fixed;
-
-    visibility: hidden;
-    opacity: 0;
-
-    transition: visibility .3s ease-in-out, opacity 0.5s linear, height 0.5s linear;
-}
-.mensaje-show {
-    visibility: visible;
-    opacity: 1;
-}
-.mensaje_flotante {
-    width: 95%;
-
-    h3 {
+    legend {
+        font-size: 4rem;
         font-weight: $bold-regular;
-    }
-}
-.formulario-flotante {
-    margin: 0;
-
-    select {
         width: 100%;
     }
-}
-.cerrar {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    cursor: pointer;
 
-    .cerrar-boton {
-        width: 2rem;
-        font-size: 2rem;
+    .contenedor-formulario {
+        padding: 2rem 5rem;
+        border-radius: 2rem;
+        background-color: $grisOscuro;
+        color: $white;
+    }
+
+    .inputForm {
+        display: flex;
+        width: 100%;
+        margin: 1rem 0;
+
+        label {
+            width: 15rem;
+            font-size: 2rem;
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+}
+.btnEnviar {
+    background-color: $colorFondo;
+    border: 2px solid transparent;
+    color: $white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+
+    transition: all ease 0.2s;
+}
+.btnEnviar:hover {
+    background-color: transparent;
+    border: 2px solid $white;
+    transform: scale(1.05);
+}
+
+.textoForm {
+    margin: 2rem 5rem;
+    text-align: center;
+    span {
         font-weight: $bold;
-        margin: 0.2rem 0.2rem 0 0s;
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 2rem;
+        font-weight: $regular;
+        margin: 0;
+    }
+
+    img {
+        margin-top: 2rem;
+        width: 100%;
+        max-width: 35rem;
+    }
+}
+@media (min-width: $desktop) {
+    .formularioContactoInicio {
+        display: grid;
+        grid-template-columns: 65% auto;
+    }
+    .textoForm {
+        text-align: left;
     }
 }

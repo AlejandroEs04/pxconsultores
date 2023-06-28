@@ -24,9 +24,20 @@
             </div>
             
             <div class="contenedor-i texto-info">
-                 <p>Complexity in the new designs, advanced engineering, manufacturing of components in different suppliers, the main reason for establishing the use of geometries, standards and dimensions known by their acronym GD&T and the ISO1101 / ASME Y14.5 standards.</p>
-                 <p>ISO GPS (geometric product specification), established by the International Organization for Standardization</p>
-                 <p>ASME Y14.5, established by the American Society of Mechanical Engineers</p>
+                <div class="contenedor2grid">
+                    <div class="contenido2-grid">
+                        <h3>Reduce Cost and Incrase Quality</h3>
+                        <p>Currently, manufacturing pursues the perfect manufacture of a product with the control of the imperfections of the processes that today require accepting their limitations and managing in the best way to achieve an efficient and effective product.</p>
+                        <p>Process tolerances, CP, CPK's, Stack Up, etc. ensure control to achieve cost and quality objectives</p>
+                        <p>As long as everything is within the capabilities of the manufacturing machines and is within the acceptance range of the product.</p>
+                    </div>
+                    <div class="contenido2-grid">
+                        <h3>ISO/ASME</h3>
+                        <p>ISO GPS (geometric product specification), established by the International Organization for Standardization</p>
+                        <p>ASME Y14.5, established by the American Society of Mechanical Engineers</p>
+                    </div>
+                </div>
+                 <p class="borde-top">Complexity in the new designs, advanced engineering, manufacturing of components in different suppliers, the main reason for establishing the use of geometries, standards and dimensions known by their acronym GD&T and the ISO1101 / ASME Y14.5 standards.</p>
             </div>
         </div>
     </div>

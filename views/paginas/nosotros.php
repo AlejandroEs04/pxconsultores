@@ -1,6 +1,5 @@
 <div class="nosotros contenedor">
-    <h1>Who are we?</h1>
-    <h2>¿Quienes somos?</h2>
+    <h1>About <span>PX Group</span></h1>
     <div class="texto-nosotros contenedor-nosotros-i contenedor-texto">
         <div class="parrafo-nosotros">
             <p>En PX Consultores, practicamos la innovación así como el pensamiento divergente para la creación del mejor concepto en la industria automotriz junto a nuestros clientes. Nuestros productos o prototipos son realizados con el mejor desarrollo realizado con los conceptos de una manufactura esbelta, realizando productos de calidad</p>
@@ -13,7 +12,7 @@
 
     <div class="contenedor-nosotros contenedor-nosotros-i">
         <div class="img-nosotros">
-            <img src="/../build/img/LogoPX.svg">
+            <img src="/../build/img/LogoPXnew.png">
         </div>
         <div class="grafica-nosotors contenido-nosotros">
             <div class="grafica-contenedor">

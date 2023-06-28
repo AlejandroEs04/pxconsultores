@@ -7,7 +7,6 @@
     .servicios {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        height: auto
     }
     .three {
         grid-column-start: 1;
@@ -24,7 +23,6 @@
     .servicios {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        height: 48rem;
     }
     .three {
         grid-column-start: 3;
@@ -68,14 +66,14 @@
         padding: 0.5rem 1.5rem;
         border-radius: 2rem;
     }
-    transition: margin ease-in-out 0.5s 0.1s, background-color linear 0.3s;
+    transition: all ease-in-out 0.5s;
 }
 
 @media (min-width:$desktop) {
     .contenedor-servicio:hover {
         .servicio {
             background-color: darken($colorFondo, $amount: 4);
-            margin: -5rem 2rem 5rem 2rem;
+            transform: translateY(-10rem);
             img {
                 width: 0%;
             }

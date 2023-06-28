@@ -48,6 +48,10 @@ function mostrarNotificacion($resultado) {
             $mensaje = 'Eliminado Correctamente';
         break;
 
+        case 4:
+            $mensaje = 'Mensaje Enviado Correctamente';
+        break;
+
         default:
             $mensaje = false;
         break;
